@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.com.mycompany.mercadoapp.funcionalidades">
+  <ClassDiagramComponents>
+    <Class name="Grafo" package="com.mycompany.mercadoapp.funcionalidades" visibility="public" xPosition="-2.0" yPosition="34.0">
+      <Fields>
+        <Field name="paradas" type="Parada[]" visibility="public"/>
+        <Field name="paradasCount" type="int" visibility="public"/>
+        <Field name="statationReachable" type="int" visibility="public"/>
+        <Field name="graph" type="Graph" visibility="public"/>
+        <Field name="paradasSeleccionadas" type="String[]" visibility="private"/>
+        <Field name="seleccionadasCount" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="maxParadas"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="limpiarParadasSeleccionadas" returnType="void" visibility="public"/>
+        <Method name="agregarParadaSeleccionada" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="esParadaSeleccionada" returnType="boolean" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="findStation" returnType="Parada" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="addStation" returnType="Parada" visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="lineColor"/>
+          <Argument type="int" name="maxNeighbors"/>
+        </Method>
+        <Method name="addConnection" returnType="void" visibility="public">
+          <Argument type="Parada" name="from"/>
+          <Argument type="Parada" name="to"/>
+        </Method>
+        <Method name="resetNodeColors" returnType="void" visibility="public"/>
+        <Method name="agregarLineaNueva" returnType="void" visibility="public">
+          <Argument type="String" name="estacionConexion"/>
+          <Argument type="String[]" name="nuevasEstaciones"/>
+          <Argument type="String" name="colorLinea"/>
+        </Method>
+        <Method name="refrescarGrafo" returnType="void" visibility="private"/>
+        <Method name="obtenerListadoParadas" returnType="String[]" visibility="public"/>
+        <Method name="getIndex" returnType="int" visibility="private">
+          <Argument type="String" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Parada" package="com.mycompany.mercadoapp.funcionalidades" visibility="public" xPosition="586.0" yPosition="99.0">
+      <Fields>
+        <Field name="id" type="String" visibility="public"/>
+        <Field name="colorLinea" type="String" visibility="public"/>
+        <Field name="paradasConectadas" type="Parada[]" visibility="public"/>
+        <Field name="paradasConectadasCount" type="int" visibility="public"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="colorLinea"/>
+          <Argument type="int" name="maxConexiones"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="conectarParada" returnType="void" visibility="package">
+          <Argument type="Parada" name="paradaConectada"/>
+        </Method>
+        <Method name="getParadasCubiertasBfs" returnType="Parada[]" visibility="public">
+          <Argument type="int" name="alcanceParadas"/>
+        </Method>
+        <Method name="getParadasCubiertasDfs" returnType="Parada[]" visibility="public">
+          <Argument type="int" name="alcanceParadas"/>
+        </Method>
+        <Method name="dfsRecursivo" returnType="int" visibility="private">
+          <Argument type="Parada" name="current"/>
+          <Argument type="int" name="level"/>
+          <Argument type="int" name="maxAlcance"/>
+          <Argument type="boolean[]" name="visited"/>
+          <Argument type="Parada[]" name="reachable"/>
+          <Argument type="int" name="count"/>
+        </Method>
+        <Method name="getIndex" returnType="int" visibility="private">
+          <Argument type="String" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="com.mycompany.mercadoapp.funcionalidades.Grafo" target="com.mycompany.mercadoapp.funcionalidades.Parada" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="com.mycompany.mercadoapp.funcionalidades.Parada" target="com.mycompany.mercadoapp.funcionalidades.Parada" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
