@@ -3,7 +3,7 @@
  */
 
 package com.mycompany.proyecto2;
-import javax.swing.JOptionPane;
+import com.mycompany.proyecto2.Interfaz.Interfaz1;
 /**
  *
  * @author erick
@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
 public class Proyecto2 {
 
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog();
+        Interfaz1 ventana = new Interfaz1();
+        ventana.setVisible(true);
     }
 }

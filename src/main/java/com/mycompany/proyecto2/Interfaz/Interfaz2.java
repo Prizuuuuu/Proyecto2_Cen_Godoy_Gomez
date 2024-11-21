@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package com.mycompany.proyecto2;
+package com.mycompany.proyecto2.Interfaz;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -11,7 +11,8 @@ import org.json.JSONObject;
  * @author erick
  */
 public class Interfaz2 extends javax.swing.JFrame {
-    private Interfaz p1;
+    private Interfaz1 p1;
+    private JSONObject json;
     /**
      * Creates new form Interfaz2
      */
@@ -20,6 +21,10 @@ public class Interfaz2 extends javax.swing.JFrame {
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         this.json = json;
+    }
+
+    private Interfaz2() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -70,7 +75,9 @@ public class Interfaz2 extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setVisible(false);       
     }//GEN-LAST:event_BTNregresarActionPerformed
-
+    public void setP1(Interfaz1 p1){
+        this.p1 = p1;
+    }
     /**
      * @param args the command line arguments
      */

@@ -1,3 +1,5 @@
+package com.mycompany.proyecto2.Interfaz;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -17,7 +19,8 @@ import org.json.JSONObject;
  * @author erick
  */
 public class Interfaz1 extends javax.swing.JFrame {
-
+    
+    private JSONObject json;
     /**
      * Creates new form Interfaz1
      */
