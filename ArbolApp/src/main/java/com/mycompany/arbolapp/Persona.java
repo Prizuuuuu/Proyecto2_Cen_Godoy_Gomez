@@ -6,7 +6,7 @@ package com.mycompany.arbolapp;
 
 /**
  *
- * @author Godoy
+ * @author erick
  */
 public class Persona {
     private String nombre;

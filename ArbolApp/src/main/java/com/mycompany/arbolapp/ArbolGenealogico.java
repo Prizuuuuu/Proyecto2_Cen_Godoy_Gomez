@@ -11,7 +11,7 @@ import org.graphstream.ui.view.ViewerPipe;
 
 /**
  *
- * @author Godoy
+ * @author erick
  */
 class ArbolGenealogico implements ViewerListener {
 

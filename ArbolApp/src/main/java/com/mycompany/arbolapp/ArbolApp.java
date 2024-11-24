@@ -6,11 +6,11 @@ package com.mycompany.arbolapp;
 
 /**
  *
- * @author Godoy
- */
+ * @author erick
 public class ArbolApp {
 
     public static void main(String[] args) {
+        
          // JOptionPane.showMessageDialog();
        System.setProperty("org.graphstream.ui", "swing");
         // Crear el árbol genealógico
