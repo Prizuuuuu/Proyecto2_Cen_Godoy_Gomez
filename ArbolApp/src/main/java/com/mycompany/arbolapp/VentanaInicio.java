@@ -53,36 +53,68 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        PanelPrecargadas.setBackground(new java.awt.Color(102, 102, 102));
         PanelPrecargadas.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         PanelPrecargadas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton2.setBackground(new java.awt.Color(204, 204, 204));
+        jButton2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton2.setText("Baratheon");
+        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         PanelPrecargadas.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 110, 30));
 
+        jButton1.setBackground(new java.awt.Color(204, 204, 204));
+        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jButton1.setText("Targaryen");
+        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         PanelPrecargadas.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 110, 30));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Cargar");
         PanelPrecargadas.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 20, -1, -1));
 
         jPanel1.add(PanelPrecargadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 170));
 
+        PanelBuscador.setBackground(new java.awt.Color(102, 102, 102));
         PanelBuscador.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         PanelBuscador.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        Buscadores.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        Buscadores.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         Buscadores.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Buscadores.setText("Buscar Por:");
         PanelBuscador.add(Buscadores, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 16, 170, 30));
 
+        BuscarNombre.setBackground(new java.awt.Color(204, 204, 204));
+        BuscarNombre.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BuscarNombre.setText("Nombre");
+        BuscarNombre.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        BuscarNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BuscarNombreActionPerformed(evt);
+            }
+        });
         PanelBuscador.add(BuscarNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 110, 30));
 
+        BuscarTitulo.setBackground(new java.awt.Color(204, 204, 204));
+        BuscarTitulo.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BuscarTitulo.setText("Titulo");
+        BuscarTitulo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PanelBuscador.add(BuscarTitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 110, 30));
 
+        BuscarGeneracion.setBackground(new java.awt.Color(204, 204, 204));
+        BuscarGeneracion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         BuscarGeneracion.setText("Generacion");
+        BuscarGeneracion.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         PanelBuscador.add(BuscarGeneracion, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 160, 110, 30));
 
         jPanel1.add(PanelBuscador, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 170, 320));
@@ -90,6 +122,8 @@ public class VentanaInicio extends javax.swing.JFrame {
         PanelJSON.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         PanelJSON.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnSeleccionar.setBackground(new java.awt.Color(204, 204, 204));
+        btnSeleccionar.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         btnSeleccionar.setText("Buscar JSON");
         btnSeleccionar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,9 +141,12 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jPanel1.add(PanelJSON, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 0, 700, 50));
 
+        PanelRegistro.setBackground(new java.awt.Color(204, 204, 204));
         PanelRegistro.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         PanelRegistro.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setBackground(new java.awt.Color(204, 204, 255));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Registro de:");
         PanelRegistro.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 30, 210, -1));
@@ -124,6 +161,7 @@ public class VentanaInicio extends javax.swing.JFrame {
 
         jPanel1.add(PanelRegistro, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 30, 210, 450));
 
+        PanelArbol.setBackground(new java.awt.Color(204, 204, 204));
         PanelArbol.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3));
         PanelArbol.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel1.add(PanelArbol, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 30, 500, 450));
@@ -180,6 +218,18 @@ public class VentanaInicio extends javax.swing.JFrame {
     private void AreaJsonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AreaJsonActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AreaJsonActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void BuscarNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BuscarNombreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BuscarNombreActionPerformed
 
     /**
      * @param args the command line arguments
